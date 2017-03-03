@@ -127,3 +127,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Aliases
 alias config='/usr/bin/git --git-dir=/home/jordi/.cfg/ --work-tree=/home/jordi'
+alias gopath='cd $GOPATH'
+alias gobin='cd $GOPATH/bin'
+alias gosrc='cd $GOPATH/src'
