@@ -50,4 +50,6 @@ filetype plugin on
 set modeline
 set ls=2
 "set background=dark
-"colorscheme solarized
+set background=dark
+set t_Co=256
+colorscheme badwolf
