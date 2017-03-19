@@ -1,0 +1,94 @@
+[global_config]
+  title_transmit_bg_color = "#23c800"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      fullscreen = True
+      parent = ""
+      type = Window
+  [[mylayout]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = a2c003ce-f1c4-46a0-a5fd-dca759551c1d
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 106:48
+      size = 3734, 2112
+      title = jordi@XPS-15: ~/.config
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1053
+      ratio = 0.499763257576
+      type = VPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 1864
+      ratio = 0.49986609534
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = a2c003ce-f1c4-46a0-a5fd-dca759551c1d
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 42cdbd13-32f7-4c6b-a773-c7ea3a5d71b2
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 68925912-0528-4caa-bf6d-4744191d3050
+  [[vim]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 1f84efe7-0e6b-4d6f-8863-f2b43f5fb9de
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 98:48
+      size = 3742, 2112
+      title = jordi@XPS-15: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 2332
+      ratio = 0.62386424372
+      type = HPaned
+    [[[terminal2]]]
+      command = /usr/bin/vim
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 1f84efe7-0e6b-4d6f-8863-f2b43f5fb9de
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 91f48130-3d87-4110-b69b-55350dd7be3d
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_image = None
+    background_type = image
+    font = Monospace 13
+    foreground_color = "#ffffff"
+    use_system_font = False
