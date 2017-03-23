@@ -141,10 +141,15 @@ alias config='/usr/bin/git --git-dir=/home/jordi/.cfg/ --work-tree=/home/jordi'
 alias gopath='cd $GOPATH'
 alias gobin='cd $GOPATH/bin'
 alias gosrc='cd $GOPATH/src'
+alias gome='cd $GOPATH/src/github.com/jseris'
 
 # Delay touchpad input with 1 sec after typing
 # touchpad is otherwise very sensitive
 #syndaemon -i 1 -K -d
 
 #disable nvidia gpu
-#sudo echo '_SB.PCI0.PEG0.PEGP._OFF' > /proc/acpi/call
+if [ ! -f '/tmp/nvidia-off' ]; then
+   echo "Disable nvidia gpu!" 
+   echo '\_SB.PCI0.PEG0.PEGP._OFF' | sudo tee /proc/acpi/call
+   touch /tmp/nvidia-off
+fi

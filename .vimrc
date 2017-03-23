@@ -18,6 +18,11 @@ Plugin 'Buffergator'
 " Vim-GO
 Plugin 'fatih/vim-go'
 
+" You Complete Me
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'itmammoth/doorboy.vim'
+
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
@@ -35,7 +40,7 @@ set expandtab
 set colorcolumn=90
 set hlsearch
 set showmatch
-set paste
+"set paste
 set mouse=a
 
 " syntax
@@ -43,13 +48,12 @@ syntax on
 " support 256 colors in Lion terminal 
 "set t_Co=256
 " files 
-filetype on
-filetype indent on
-filetype plugin on
+"filetype on
+"filetype indent on
+"filetype plugin on
 " always show file name
 set modeline
 set ls=2
-"set background=dark
 set background=dark
 set t_Co=256
 colorscheme badwolf
