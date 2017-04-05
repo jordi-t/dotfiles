@@ -146,10 +146,3 @@ alias gome='cd $GOPATH/src/github.com/jseris'
 # Delay touchpad input with 1 sec after typing
 # touchpad is otherwise very sensitive
 #syndaemon -i 1 -K -d
-
-#disable nvidia gpu
-if [ ! -f '/tmp/nvidia-off' ]; then
-   echo "Disable nvidia gpu!" 
-   echo '\_SB.PCI0.PEG0.PEGP._OFF' | sudo tee /proc/acpi/call
-   touch /tmp/nvidia-off
-fi
